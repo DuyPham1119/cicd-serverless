@@ -1,0 +1,15 @@
+{
+  "name": "serverless-cicd",
+  "version": "1.0.0",
+  "description": "Deploy AWS Step Functions & Lambda with Serverless Framework",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "remove": "serverless remove"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "serverless": "^3.32.0",
+    "serverless-step-functions": "^3.7.0",
+    "serverless-offline": "^12.0.4"
+  }
+}
