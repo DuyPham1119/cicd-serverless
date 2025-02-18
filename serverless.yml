@@ -1,0 +1,28 @@
+service: my-service
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+
+plugins:
+  - serverless-step-functions
+  - serverless-offline
+
+functions:
+  helloFunction:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello1
+          method: get
+
+stepFunctions:
+  stateMachines:
+    WorkflowOne:
+      name: MyFirstStateMachine
+      definition: ${file(./step-functions/workflow1.yml)}
+
+    WorkflowTwo:
+      name: MySecondStateMachine
+      definition: ${file(./step-functions/workflow2.yml)}

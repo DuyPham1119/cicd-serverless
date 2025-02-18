@@ -1,0 +1,7 @@
+Comment: "First Step Function"
+StartAt: Start
+States:
+  Start:
+    Type: Pass
+    Result: "Hello from Workflow One"
+    End: true

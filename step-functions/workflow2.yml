@@ -1,0 +1,7 @@
+Comment: "Second Step Function"
+StartAt: Start
+States:
+  Start:
+    Type: Pass
+    Result: "Hello from Workflow Two"
+    End: true
