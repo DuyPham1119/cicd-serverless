@@ -3,5 +3,5 @@ StartAt: Start
 States:
   Start:
     Type: Pass
-    Result: "Hello from Workflow One"
+    Result: "Hello from Workflow One second"
     End: true
