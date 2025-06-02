@@ -35,6 +35,7 @@ jobs:
       - name: back to any
         run: |
           pwd
+          ls
           cd ..
           echo $pwd
         
