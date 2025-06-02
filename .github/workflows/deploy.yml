@@ -27,8 +27,13 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-southeast-1  # Update your region
 
-      - name: Install Dependencies
-        run: npm install
-
-      - name: Deploy Serverless Application
-        run: serverless deploy
+      - name: copy abc
+        run: |
+          cd ./step_functions
+          echo "abc"
+      - name: back to any
+        run: |
+          pwd
+          cd ..
+          echo $pwd
+        
