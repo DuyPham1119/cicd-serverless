@@ -29,7 +29,8 @@ jobs:
 
       - name: copy abc
         run: |
-          cd ./step_functions
+          echo $pwd
+          cd ./step-functions
           echo "abc"
       - name: back to any
         run: |
