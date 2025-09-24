@@ -20,7 +20,7 @@ functions:
     handler: handler.hello
     events:
       - http:
-          path: hello1
+          path: hello12
           method: get
     layers:
       - Ref: ClamAvLayerLambdaLayer
