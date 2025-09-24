@@ -34,3 +34,6 @@ layers:
     description: 'clamav layer with python 3.12'
     package:
       artifact: ./packages/lambda_clamav_arm.zip
+    compatibleRuntimes:
+      - python3.11
+      - python3.12
