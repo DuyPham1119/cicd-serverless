@@ -22,8 +22,8 @@ functions:
       - http:
           path: hello12
           method: get
-    layers:
-      - Ref: ClamAvLayerLambdaLayer
+    # layers:
+    #   - Ref: ClamAvLayerLambdaLayer
 
 stepFunctions:
   stateMachines:
