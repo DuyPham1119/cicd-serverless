@@ -9,6 +9,12 @@ plugins:
   - serverless-step-functions
   - serverless-offline
 
+layers:
+  clamAvLayer:
+    description: 'clamav layer with python 3.12'
+    package:
+      artifact: ./packages/lambda_clamav_arm.zip
+
 functions:
   helloFunction:
     handler: handler.hello
@@ -29,8 +35,3 @@ stepFunctions:
       name: MySecondStateMachine
       definition: ${file(./step-functions/workflow2.yml)}
 
-layers:
-  clamAvLayer:
-    description: 'clamav layer with python 3.12'
-    package:
-      artifact: ./packages/lambda_clamav_arm.zip
