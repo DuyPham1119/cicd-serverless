@@ -16,8 +16,8 @@ functions:
       - http:
           path: hello1
           method: get
-  layers:
-    - { Ref: clamAvLayer }
+    layers:
+      - Ref: ClamAvLayerLambdaLayer
 
 stepFunctions:
   stateMachines:
