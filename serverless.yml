@@ -18,6 +18,13 @@ functions:
           method: get
     layers:
       - Ref: ClamAvLayer1LambdaLayer
+      
+  helloFunction2:
+    handler: handler.hello
+    events:
+      - http:
+          path: hello12
+          method: get
 
 stepFunctions:
   stateMachines:
