@@ -23,7 +23,7 @@ functions:
     handler: handler.hello
     events:
       - http:
-          path: hello12
+          path: hello124
           method: get
 
 stepFunctions:
