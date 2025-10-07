@@ -12,6 +12,7 @@ plugins:
 functions:
   helloFunction:
     handler: handler.hello
+    name: helloFunctionName 
     events:
       - http:
           path: hello12
@@ -21,20 +22,21 @@ functions:
       
   helloFunction2:
     handler: handler.hello
+    name: helloFunctionName2
     events:
       - http:
           path: hello124
           method: get
 
-stepFunctions:
-  stateMachines:
-    WorkflowOne:
-      name: MyFirstStateMachine
-      definition: ${file(./step-functions/workflow1.yml)}
+# stepFunctions:
+#   stateMachines:
+#     WorkflowOne:
+#       name: MyFirstStateMachine
+#       definition: ${file(./step-functions/workflow1.yml)}
 
-    WorkflowTwo:
-      name: MySecondStateMachine
-      definition: ${file(./step-functions/workflow2.yml)}
+#     WorkflowTwo:
+#       name: MySecondStateMachine
+#       definition: ${file(./step-functions/workflow2.yml)}
 
 layers:
   clamAvLayer1:
