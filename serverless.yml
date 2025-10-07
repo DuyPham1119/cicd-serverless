@@ -1,4 +1,4 @@
-service: my-service
+service: my-service-new
 
 provider:
   name: aws
